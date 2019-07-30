@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            [title="heading"]{
+                color: blue;
+            }
+
+            abbr[title]{
+                color: red;
+            }
+            input[type="text"]{
+                border: 1px solid red;
+            }
+            input[type='submit']{
+                border: 1px solid green;
+            }
+            [class~="warning"]{
+                color: wheat;
+                background: red;
+            }
+            p[lang |=en]{
+                color: wheat;
+                background: blue;
+            }
+            a[href^="http://"]{
+                /* background: url("C:\Users\admin\Desktop\images.jpg") 100% 50% no-repeat; */
+                background: black;
+                padding: 15px;
+            }
+
+            a[href$=".jpg"]{
+                /* background: url("C:\Users\admin\Desktop\images.jpg") 100% 50% no-repeat; */
+                background: black;
+                padding: 15px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1 title="heading">attribute selector demo</h1>
+        <p title="paragraph">Color of this para will be red</p>
+
+        <p>The <abbr title="HyperText Markup Language">HTML</abbr>is the publishing language of WWW.</p>
+
+        <input type="tetx">
+        <input type="submit" value='submit'>
+
+        <p class="warning">The style will apply to this paragraph</p> 
+
+        <p lang="en">The style will apply to this paragraph</p>
+
+        <p> <a href="http://www.google.com" target="_blank">Google</a></p>
+        
+        <p><a href="C:\Users\admin\Desktop\images.jpg"></a> </p>
+
+
+    </body>
+</html>

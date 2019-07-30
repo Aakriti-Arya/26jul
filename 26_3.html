@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Before and after pseudo element
+        </title>
+        <style type="text/css">
+            h1::before{
+                content: "";
+                background-image: url(" ./download.png");
+                background-size: 50px 20px;
+                display: inline-block;
+                width: 50px;
+                height: 20px;
+            }
+            h1::after{
+                content: "";
+                background-image: url(" ./download (1).png");
+                background-size: 50px 20px;
+                display: inline-block;
+                width: 50px;
+                height: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 align="center">This is heading</h1>
+        <p><strong>Note:</strong>Internet 7 Explorer and earlier versions does not support.</p>
+    </body>
+</html>
